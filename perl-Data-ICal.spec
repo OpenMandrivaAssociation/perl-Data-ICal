@@ -1,9 +1,9 @@
 %define upstream_name     Data-ICal
-%define upstream_version  0.16
+%define upstream_version  0.18
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
-Release:        %mkrel 2
+Release:        1
 
 Summary:        Generates iCalendar (RFC 2445) calendar files
 License:        GPL+ or Artistic
@@ -20,7 +20,6 @@ BuildRequires:  perl(Test::NoWarnings)
 BuildRequires:  perl(Test::Warn)
 BuildRequires:  perl(Text::vFile::asData)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 # rpm doesn't catch this
 Requires:       perl(Class::Accessor)
 
@@ -41,7 +40,6 @@ many popular calendaring programs such as Apple's iCal.
 make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 #make pure_install PERL_INSTALL_ROOT=%{buildroot}
@@ -50,9 +48,6 @@ rm -rf %{buildroot}
 #find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null \;
 
 #chmod -R u+w %{buildroot}/*
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
