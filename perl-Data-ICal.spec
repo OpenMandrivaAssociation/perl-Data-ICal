@@ -1,15 +1,15 @@
 %define upstream_name     Data-ICal
-%define upstream_version  0.18
+%define upstream_version 0.21
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Generates iCalendar (RFC 2445) calendar files
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/Data-ICal/
-Source0:	http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Data/Data-ICal-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::Accessor)
@@ -47,4 +47,5 @@ make test
 %doc Changes README
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
+
 

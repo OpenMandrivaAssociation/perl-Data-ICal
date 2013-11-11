@@ -1,2 +1,4 @@
+removed_sources:
+  Data-ICal-0.18.tar.gz: 16a8f941fcfc3ac15466b68e2fac9348beeba9fe
 sources:
-  "Data-ICal-0.18.tar.gz": 16a8f941fcfc3ac15466b68e2fac9348beeba9fe
+  Data-ICal-0.21.tar.gz: 8a91f99517440b404692a5a3f7deef91aa46a38c
