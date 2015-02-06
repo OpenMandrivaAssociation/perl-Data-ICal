@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Generates iCalendar (RFC 2445) calendar files
 License:	GPL+ or Artistic
