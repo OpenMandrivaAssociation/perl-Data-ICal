@@ -8,7 +8,7 @@ Release:	3
 Summary:	Generates iCalendar (RFC 2445) calendar files
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/Data-ICal/
+URL:		https://search.cpan.org/dist/Data-ICal/
 Source0:	http://www.cpan.org/modules/by-module/Data/Data-ICal-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
